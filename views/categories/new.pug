@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title New categories
+  body
+      
+    form(action="/categories" method="POST")
+        textarea(name="title" placeholder="What categories are you going to save")
+        br
+        textarea(name="color" placeholder="color")
+        input(type="submit" value="Guardar")

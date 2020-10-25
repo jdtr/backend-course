@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Category edit
+  body
+      
+    form(action=`/categories/${category.id}?_method=PUT` method="POST")
+        input(type="text" name="categories" placeholder="ID of categories separated by commas")
+        textarea(name="title" placeholder="what category are you going to save")=category.title
+        input(type="submit" value="Save")

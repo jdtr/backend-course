@@ -1,0 +1,7 @@
+html
+ head
+  title Tasks   
+ body
+  form(action=`/tasks/${ task.id }?_method=PUT` method="POST")
+    textarea(name="description", placeholder="Writer here your task") = task.description
+    button(type="Submit" value="Save") Save
